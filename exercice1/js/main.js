@@ -1,4 +1,4 @@
 /* Changement du carré vert en carré rouge */
-$(function(){
+$(window).click(function(){
     $("#square").css("background-color", "red");
   });
