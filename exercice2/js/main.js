@@ -1,4 +1,5 @@
 /* Changer la largeur du carré à 500 pixels */
-$(window).click('resize', function() {
+
+$(function() {
     $(square).width( 500 );
 });
