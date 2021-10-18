@@ -3,7 +3,6 @@
 $(function(){
 
     $("button").click(function(){
-        // var inputValue = $("input").val()
         if ( $("input").val().length > 5) {
             $("input").addClass("is-valid")
         } else $("input").addClass("is-invalid")
