@@ -4,9 +4,15 @@
 $(function(){
 
     $("input").keyup(function(){
-        if ( $("input").val().length > 5) {
+        var inputValue = $("input").val()
+
+        if (inputValue.length > 5) {
             $("input").addClass("is-valid")
-        } else $("input").addClass("is-invalid")
+            $("input").remove("is-invalid")
+        } else {
+            $("input").addClass("is-invalid")
+            $("input").remove("is-valid")
+        }
         
     });
     

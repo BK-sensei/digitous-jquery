@@ -1,10 +1,12 @@
 // Après avoir cliqué sur le bouton magique : mettre le carré en bas à droite de la boîte blanche avec la méthode animate.
 
-$("button").click(function(){
+$(function(){
+  $("button").click(function(){
     $("#square").animate({
-        left: '380px',
-        top: '180px',
+        right: '0px',
+        bottom: '0px',
     }, 3000, function() { 
-      console.log("animation terminée !");
+
     });
 });
+})
