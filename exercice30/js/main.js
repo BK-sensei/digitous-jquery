@@ -8,10 +8,10 @@ $(function(){
 
         if (inputValue.length > 5) {
             $("input").addClass("is-valid")
-            $("input").remove("is-invalid")
+            $("input").removeClass("is-invalid")
         } else {
             $("input").addClass("is-invalid")
-            $("input").remove("is-valid")
+            $("input").removeClass("is-valid")
         }
         
     });
